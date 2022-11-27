@@ -1,1 +1,2 @@
-# calculator
+This is my rendition of The Odin Project's calculator project from the foundations section.
+The objective of this project is to implement everything TOP has gone over so far to create a simple calculator app. A full set of instructions for this project can be found on TOP's website https://www.theodinproject.com/lessons/foundations-calculator
