@@ -1,0 +1,39 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.calculator {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+}
+
+.screen{
+    display: flex;
+    justify-content: flex-end;
+    height: 50px;
+    width: 400px;
+    background-color: azure;
+    align-items: flex-end;
+    padding: 15px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .button{
+    width: 100px;
+    height: 80px;
+    font-size: 40px;
+}
+
+.equals {
+    height: 80px;
+}
