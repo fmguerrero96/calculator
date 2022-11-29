@@ -56,11 +56,12 @@ function displayDecimal(period){
 function calculate(num1, num2, action){
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
-    if (action === '+'){resultValue = (num1 + num2)}
-    else if (action === '-'){resultValue = num1 - num2}
-    else if (action === 'x'){resultValue = num2 * num1}
-    else if (action === '/'){resultValue = num1 / num2}
-    if (resultValue === Infinity){resultValue = 'Tas pero bien menso, no se puede dividir entre 0'}
+    if (action === '+'){resultValue = Math.round((num1 + num2)*100000)/100000}
+    else if (action === '-'){resultValue = Math.round((num1 - num2)*100000)/100000}
+    else if (action === 'x'){resultValue = Math.round((num1 * num2)*100000)/100000}
+    else if (action === '/'){resultValue = Math.round((num1 / num2)*100000)/100000}
+    if (resultValue === Infinity){
+    resultValue = 'Tas pero bien menso, no se puede dividir entre 0'}
 }
 
 clearButton.addEventListener('click', function(){
