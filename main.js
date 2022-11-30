@@ -30,6 +30,9 @@ equalsButton.addEventListener('click', function(e){
     operationScreen.textContent = '';
     operator = '';
     operationValue1 = resultValue;
+    console.log(operationValue1);
+    console.log(operationValue2);
+    console.log(resultValue);
 })
 
 decimalButton.addEventListener('click', function(e){
@@ -61,7 +64,7 @@ function calculate(num1, num2, action){
     else if (action === 'x'){resultValue = Math.round((num1 * num2)*100000)/100000}
     else if (action === '/'){resultValue = Math.round((num1 / num2)*100000)/100000}
     if (resultValue === Infinity){
-    resultValue = 'Tas pero bien menso, no se puede dividir entre 0'}
+    resultValue = 'Tas pero bien mens@, no se puede dividir entre 0'}
 }
 
 clearButton.addEventListener('click', function(){

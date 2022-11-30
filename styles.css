@@ -8,9 +8,13 @@ body{
 
 .calculator {
     margin-top: 100px;
+    padding: 20px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: space-between;
+    background-color: rgb(160, 160, 160);
+    height: 575px;
 }
 
 .screen{
@@ -21,18 +25,28 @@ body{
     background-color: azure;
     align-items: flex-end;
     padding: 15px;
+    font-family: 'Jura', sans-serif;
 }
 
 .top{
     font-size: 25px;
+    font-weight: 900;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
 }
 .bottom{
     font-size: 35px;
+    font-weight: 900;
+    margin-bottom: 15px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .row{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .row .button{
@@ -44,4 +58,8 @@ body{
 .equals {
     height: 80px;
     font-size: 40px;
+}
+
+.button {
+    border-radius: 10px;
 }
